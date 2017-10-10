@@ -106,7 +106,7 @@ namespace StartFinance.Views
             {   // Exception to display when amount is invalid or not numbers
                 if (ex is FormatException)
                 {
-                    MessageDialog dialog = new MessageDialog("You forgot to enter the details or entered an invalid data", "Oops..!");
+                    MessageDialog dialog = new MessageDialog("You forgot to enter the details OR entered an invalid data", "Oops..!");
                     await dialog.ShowAsync();
                 }   // Exception handling when SQLite contraints are violated
                 else if (ex is SQLiteException)
