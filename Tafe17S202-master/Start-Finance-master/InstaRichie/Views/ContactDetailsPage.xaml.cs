@@ -161,7 +161,7 @@ namespace StartFinance.Views
                 }
                 catch (NullReferenceException)
                 {
-                    MessageDialog ClearDailog = new MessageDialog("Please Select the Item to Update", "Oops....!");
+                    MessageDialog ClearDailog = new MessageDialog("Please Select the Item to Update", "Oops..!");
                     await ClearDailog.ShowAsync();
                 }
             }
