@@ -112,7 +112,7 @@ namespace StartFinance.Views
                 }   // Exception handling when SQLite contraints are violated
                 else if (ex is SQLiteException)
                 {
-                    MessageDialog dialog = new MessageDialog("Account Name already exist, Try Different Name", "Oops..!");
+                    MessageDialog dialog = new MessageDialog("Account Name already exists, Try Different Name", "Oops..!");
                     await dialog.ShowAsync();
                 }
                 else
