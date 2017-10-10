@@ -21,7 +21,7 @@ namespace StartFinance.Views
             set { SetValue(BusyTextProperty, value); }
         }
         public static readonly DependencyProperty BusyTextProperty =
-            DependencyProperty.Register(nameof(BusyText), typeof(string), typeof(Busy), new PropertyMetadata("Please wait..."));
+            DependencyProperty.Register(nameof(BusyText), typeof(string), typeof(Busy), new PropertyMetadata("Please wait......."));
 
         public bool IsBusy
         {
