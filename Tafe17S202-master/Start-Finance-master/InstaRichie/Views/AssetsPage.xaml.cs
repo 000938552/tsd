@@ -72,7 +72,7 @@ namespace StartFinance.Views
             {
                 if (AssetNameText.Text.ToString() == "")
                 {
-                    MessageDialog dialog = new MessageDialog("No Account Name entered", "Oops..!");
+                    MessageDialog dialog = new MessageDialog("No Account name entered", "Oops..!");
                     await dialog.ShowAsync();
                 }
                 else
