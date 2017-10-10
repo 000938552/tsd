@@ -83,7 +83,7 @@ namespace StartFinance.Views
 
                 if (Desc.Text == "")
                 {
-                  MessageDialog dialog = new MessageDialog("Not entered Debt name");
+                  MessageDialog dialog = new MessageDialog("Not entered Debt Name");
                   await dialog.ShowAsync();
                 }
                 else

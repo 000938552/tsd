@@ -106,7 +106,7 @@ namespace StartFinance.Views
                 try
                 {
                     string ContactLabels = ((ShoppingList)ShoppingListView.SelectedItem).ID;
-                    var updateQuery = conn.Query<ShoppingList>("UPDATE ShoppingList set ID ='" + IDtextBox.Text + "', ShoppingDate ='" + ShoppingDate.Text + "', ItemName ='" + NameOfItem.Text + "'PriceQuoted ='" + PriceQuoted.Text + "' where ID =" + ContactLabels);
+                    var updateQuery = conn.Query<ShoppingList>("Update ShoppingList set ID ='" + IDtextBox.Text + "', ShoppingDate ='" + ShoppingDate.Text + "', ItemName ='" + NameOfItem.Text + "'PriceQuoted ='" + PriceQuoted.Text + "' where ID =" + ContactLabels);
                     Results();
                 }
                 catch (NullReferenceException)
