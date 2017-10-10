@@ -89,7 +89,7 @@ namespace StartFinance.Views
             {
                 if (ex is FormatException)
                 {
-                    MessageDialog dialog = new MessageDialog("You forgot to enter the Value or entered an invalid data", "Oops..!");
+                    MessageDialog dialog = new MessageDialog("You forgot to enter the value or entered an invalid data", "Oops..!");
                     await dialog.ShowAsync();
                 }
                 else if (ex is SQLiteException)
