@@ -68,7 +68,7 @@ namespace StartFinance.Views
             FullTotal.Text = "Total : " + nnn.FullValuation().ToString();
             DebtChart.Percentage = nnn.PercentageScore();
             CenterValue.Text= ""+nnn.PercentageScore().ToString("0.00") +"%";
-            MonthlyData.Text = "Monthly : " + nnn.MonthlyStatus().ToString();
+            MonthlyData.Text = "Monthly :  " + nnn.MonthlyStatus().ToString();
             RatioReportTxt.Text = nnn.RatioReport();
 
             conn.CreateTable<Assets>();
